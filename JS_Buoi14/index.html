@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Demo JS_B14</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="row ml-2">
+    <div class="col-md-6">
+      <h3>Bài tập 1: Nhập vào điểm trung bình. Nếu lớn hơn hoặc = 5 thì in ra là đậu ngược lại bé hơn 5 in ra rớt.</h3>
+      <div class="form-group">
+        <label for="">Nhập vào điểm trung bình</label>
+        <input type="text" id="diemTrungBinh" class="form-control" placeholder="Nhập kết quả vào">
+        <button id="btnXepLoai" class="btn btn-success mt-2">Xếp loại</button>
+        <div class="form-group">
+          <p id="ketQuaBai1" class="alert alert-success mt-2">Kết quả: </p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-6 ml-2">
+      <h3>Bài tập 2: Cho người dùng nhập vào 2 số. Tìm số lớn nhất và in ra kết quả.</h3>
+      <div class="form-group">
+        <label for="">Nhập vào số thứ 1</label>
+        <input type="text" id="soThu1" class="form-control" placeholder="Nhập số 1">
+        <div class="form-group">
+          <label for="">Nhập vào số thứ 2</label>
+          <input type="text" id="soThu2" class="form-control" placeholder="Nhập số 2">
+
+          <button id="btnTimSoLonNhat" class="btn btn-success mt-2">Kết quả</button>
+          <div class="form-group">
+            <p id="ketQuaBai2" class="alert alert-success mt-2">Kết quả: </p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="row ml-2">
+      <div class="col-md-6">
+        <h3>Bài tập 3: Viết chương trình cho phép người dùng nhập vào số giờ làm và tiền công 1 giờ. Yêu cầu: Tính tiền
+          công dựa trên số giờ làm theo công thức sau:</h3>
+        <div class="alert alert-danger">
+          <p>Nếu số giờ làm <= 40 : Tiền công=Số giờ làm * tiền công 1 giờ</p>
+              <p>Nếu số giờ làm > 40: TIền công = 40 * tiền công 1 giờ + (số giờ - 40) * tiền công 1 giờ * 1.5</p>
+        </div>
+        <div class="form-group">
+          <label for="">Nhập vào số giờ làm / tuần</label>
+          <input type="text" id="soGioLamTrenTuan" class="form-control w-25" placeholder="Nhập giờ làm">
+          <div class="form-group">
+            <label for="">Tiền công trên 1 giờ</label>
+            <input type="text" id="tienCongTrenGio" class="form-control w-25" placeholder="Nhập tiền công 1 giờ">
+
+            <button id="btnTinhTien" class="btn btn-success mt-2">Tính tiền lương</button>
+            <div class="form-group">
+              <p id="ketQuaBai3" class="alert alert-success mt-2"></p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="row ml-2">
+        <div class="col-md-6">
+          <h3>Bài tập 4: Viết chương trình cho phép người dùng nhập vào điểm toán lsy hóa. Yêu cầu in ra điểm trung bình
+            và xếp loại</h3>
+          <div class="form-group row">
+            <div class="col-4">
+              <p>Nhập vào điểm toán</p>
+              <input type="text" class="form-control" id="diemToan">
+            </div>
+            <div class="col-4">
+              <p>Nhập vào điểm lý</p>
+              <input type="text" class="form-control" id="diemLy">
+            </div>
+            <div class="col-4">
+              <p>Nhập vào điểm hóa</p>
+              <input type="text" class="form-control" id="diemHoa">
+            </div>
+          </div>
+          <div class="form-group">
+            <button id="btnTinhDTB" class="btn btn-success">Tính</button>
+          </div>
+          <div class="form-group">
+            <p id="ketQuaBai4" class="alert alert-success mt-2"></p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+      <script src="./main.js"></script>
+</body>
+
+</html>
